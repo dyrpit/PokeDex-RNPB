@@ -1,34 +1,3 @@
-// import AsyncStorage from '@react-native-community/async-storage';
-// import {useState, useEffect} from 'react';
-
-// export const useAsyncStorage = key => {
-//   const [storedValue, setValue] = useState(null);
-
-//   useEffect(() => {
-//     (async () => {
-//       try {
-//         const stringifyValue = await AsyncStorage.getItem(key);
-//         const value =
-//           stringifyValue != null ? JSON.parse(stringifyValue) : null;
-//         setValue(value);
-//       } catch (e) {
-//         console.error('Load error', e);
-//       }
-//     })();
-//   }, [key]);
-
-//   const setStoredValue = async value => {
-//     try {
-//       // setValue(value);
-//       const stringifyValue = JSON.stringify(value);
-//       await AsyncStorage.setItem(key, stringifyValue);
-//     } catch (e) {
-//       console.error('Store Value Error', e);
-//     }
-//   };
-
-//   return [storedValue, setStoredValue];
-// };
 import AsyncStorage from '@react-native-community/async-storage';
 import {useState, useEffect} from 'react';
 

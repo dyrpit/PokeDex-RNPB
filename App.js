@@ -18,12 +18,6 @@ const HomeStack = () => (
   </Stack.Navigator>
 );
 
-const BerriesStack = () => (
-  <Stack.Navigator>
-    <Stack.Screen name="Berries" component={BerriesView} />
-  </Stack.Navigator>
-);
-
 export default function App() {
   return (
     <NavigationContainer>
@@ -48,7 +42,7 @@ export default function App() {
           inactiveTintColor: 'grey',
         }}>
         <Tab.Screen name="Home" component={HomeStack} />
-        <Tab.Screen name="Berries" component={BerriesStack} />
+        <Tab.Screen name="Berries" component={BerriesView} />
       </Tab.Navigator>
     </NavigationContainer>
   );
